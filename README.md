@@ -78,10 +78,10 @@ In order to test the previously introduced schemes, follow the next steps:
 	Notice that in this case the operation is static; first, you give a set of documents; second, the associated index is created; third, you can search based on keywords of your choice. However, you cannot make any updates over your 		index. Study the associated implementation and the library used in the generateKey(), buildIndex() and query() methods.
 
 ###### Recommendations: 
-a. After the successful generation of the index, verify that it has been correctly stored in the folder you selected along with the secret key. Then, open the file containing the index and notice that it is fully encrypted (so it does not reveal any information about the contents of the files).
-b. If you chose the second option (Test files encryption and query over those files), after index building, verify that the files were properly encrypted. To do this, try to open them from your preferred editor and notice that it is not possible to see their content. 
++ After the successful generation of the index, verify that it has been correctly stored in the folder you selected along with the secret key. Then, open the file containing the index and notice that it is fully encrypted (so it does not reveal any information about the contents of the files).
++ If you chose the second option (Test files encryption and query over those files), after index building, verify that the files were properly encrypted. To do this, try to open them from your preferred editor and notice that it is not possible to see their content. 
 
-	Then, when you perform some queries, you will have the option to decrypt the returned files. Choose this option and 		verify that your files were properly decrypted (seeing that their content is accurate and complete).
+Then, when you perform some queries, you will have the option to decrypt the returned files. Choose this option and 		verify that your files were properly decrypted (seeing that their content is accurate and complete).
 
 + Now, try the second the second option of the main menu (the dynamic implementation). You will notice that, with the first command of this option, it is possible to create and work with an index and update or delete previously indexed documents (which is why it's a dynamic implementation). In order to understand the associated changes and the impact of these updates, be sure to understand the updateIndex() and deleteElement() methods.
 
