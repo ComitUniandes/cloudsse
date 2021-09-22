@@ -63,23 +63,23 @@ only handles add operations, and a second one that handles delete operations in 
 
 In order to test the previously introduced schemes, follow the next steps:
 
-+ Create two new directories and store some input files. You can include .pdf .docx .pptx .html or .txt files. You are going to perform queries over this information, so it is recommended that the files are composed mostly of text.
+1. Create two new directories and store some input files. You can include .pdf .docx .pptx .html or .txt files. You are going to perform queries over this information, so it is recommended that the files are composed mostly of text.
 
 ###### Important: The names of the files should not have whitespaces. 
 
-+ Create other directory that will contain the key and index files of both implementations.
+2. Create other directory that will contain the key and index files of both implementations.
 
-+ Run the previously generated .jar by executing the command below
+3. Run the previously generated .jar by executing the command below
 
 	`java -jar SSELab-1.0-SNAPSHOT-jar-with-dependencies.jar`
 
-+ Start testing the first option of the main menu (the static implementation). This option has two possible commands 1. Test indexing and query, 2.Test files encryption and query over those files. The first command creates a secure index, but the information is kept in plain text. The second commands allows you to encrypt the files.
+4. Start testing the first option of the main menu (the static implementation). This option has two possible commands 1. Test indexing and query, 2.Test files encryption and query over those files. The first command creates a secure index, but the information is kept in plain text. The second commands allows you to encrypt the files.
 
 	Notice that in this case the operation is static; first, you give a set of documents; second, the associated index is created; third, you can search based on keywords of your choice. However, you cannot make any updates over your 		index. Study the associated implementation and the library used in the generateKey(), buildIndex() and query() methods.
 
 ###### Recommendations: 
-1. After the successful generation of the index, verify that it has been correctly stored in the folder you selected along with the secret key. Then, open the file containing the index and notice that it is fully encrypted (so it does not reveal any information about the contents of the files).
-2. If you chose the second option (Test files encryption and query over those files), after index building, verify that the files were properly encrypted. To do this, try to open them from your preferred editor and notice that it is not possible to see their content. 
+a. After the successful generation of the index, verify that it has been correctly stored in the folder you selected along with the secret key. Then, open the file containing the index and notice that it is fully encrypted (so it does not reveal any information about the contents of the files).
+b. If you chose the second option (Test files encryption and query over those files), after index building, verify that the files were properly encrypted. To do this, try to open them from your preferred editor and notice that it is not possible to see their content. 
 
 	Then, when you perform some queries, you will have the option to decrypt the returned files. Choose this option and 		verify that your files were properly decrypted (seeing that their content is accurate and complete).
 
